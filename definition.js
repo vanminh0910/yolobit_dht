@@ -1,5 +1,17 @@
 Blockly.Blocks['yolobit_sample_extension3'] = {
   init: function() {
+    this.appendDummyInput()
+        .appendField(new Blockly.FieldVariable("dht sensor"), "SENSOR")
+        .appendField("update");
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(230);
+ this.setTooltip("Update sensor value");
+ this.setHelpUrl("");
+  }
+
+Blockly.Blocks['yolobit_sample_extension4'] = {
+  init: function() {
     this.jsonInit(
       {
         "message0": Blockly.Msg.DHT_CREATE_MESSAGE0,
