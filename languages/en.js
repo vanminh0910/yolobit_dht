@@ -1,0 +1,2 @@
+Blockly.Msg.SAMPLE_EXTENSION = "SAMPLE"
+Blockly.Msg.YOLOBIT_SAMPLE_EXTENSION = 'Sample Extension'
