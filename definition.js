@@ -1,4 +1,4 @@
-Blockly.Blocks['yolobit_sample_extension2'] = {
+Blockly.Blocks['yolobit_sample_extension3'] = {
   init: function() {
     this.jsonInit(
       {
