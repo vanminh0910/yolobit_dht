@@ -9,6 +9,7 @@ Blockly.Blocks['yolobit_sample_extension3'] = {
  this.setTooltip("Update sensor value");
  this.setHelpUrl("");
   }
+};
 
 Blockly.Blocks['yolobit_sample_extension4'] = {
   init: function() {
