@@ -1,5 +1,7 @@
 <xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none">
-  <category name="{{SAMPLE_EXTENSION}}" colour="#ff8f3f" icon="heart">
-    <block type="yolobit_extension4"/>
+  <category name="DHT" colour="#ff8f3f" icon="thermometer">
+    <block type="dht_create"/>
+    <block type="dht_measure"/>
+    <block type="dht_read"/>
   </category>
 </xml>
