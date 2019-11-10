@@ -1,5 +1,5 @@
 <xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none">
-  <category name="{{SAMPLE_EXTENSION}}" colour="#ff8f3f" icon="thermometer">
-    <block type="yolobit_extension3"/>
+  <category name="{{SAMPLE_EXTENSION}}" colour="#ff8f3f" icon="heart">
+    <block type="yolobit_extension4"/>
   </category>
 </xml>
