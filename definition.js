@@ -1,4 +1,4 @@
-Blockly.Blocks['yolobit_sample_extension3'] = {
+Blockly.Blocks['yolobit_extension3'] = {
   init: function() {
     this.appendDummyInput()
         .appendField(new Blockly.FieldVariable("dht sensor"), "SENSOR")
@@ -11,7 +11,7 @@ Blockly.Blocks['yolobit_sample_extension3'] = {
   }
 };
 
-Blockly.Blocks['yolobit_sample_extension4'] = {
+Blockly.Blocks['yolobit_extension4'] = {
   init: function() {
     this.jsonInit(
       {
