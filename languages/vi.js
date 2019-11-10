@@ -3,7 +3,7 @@ Blockly.Msg.DHT_CREATE_MESSAGE1 = "cảm biến DHT"
 Blockly.Msg.DHT_CREATE_TOOLTIP = "Khởi tạo cảm biến DHT với loại và chân cắm được chọn"
 Blockly.Msg.DHT_CREATE_HELPURL = ""
 
-Blockly.Msg.DHT_MEASURE_MESSAGE0 = "Cập nhật %1"
+Blockly.Msg.DHT_MEASURE_MESSAGE0 = "cập nhật %1"
 Blockly.Msg.DHT_MEASURE_TOOLTIP = "Cập nhật giá trị đo được từ cảm biến DHT"
 Blockly.Msg.DHT_MEASURE_HELPURL = ""
 
