@@ -128,8 +128,8 @@ Blockly.Blocks['dht_measure'] = {
         "args0": [
           {
             "type": "field_variable",
-            "name": "SENSOR",
-            "variable": "dht-sensor"
+            "name": "dht_sensor",
+            "variable": Blockly.Msg.DHT_CREATE_MESSAGE1
           }
         ],
         "previousStatement": null,
@@ -151,8 +151,8 @@ Blockly.Blocks['dht_read'] = {
         "args0": [
           {
             "type": "field_variable",
-            "name": "SENSOR",
-            "variable": "dht-sensor"
+            "name": "dht_sensor",
+            "variable": Blockly.Msg.DHT_CREATE_MESSAGE1
           },
           {
             "type": "field_dropdown",
@@ -179,7 +179,7 @@ Blockly.Blocks['dht_read'] = {
 };
 
 Blockly.Python['dht_create'] = function(block) {
-  var variable_sensor = Blockly.Python.variableDB_.getName(block.getFieldValue('SENSOR'), Blockly.Variables.NAME_TYPE);
+  var variable_sensor = Blockly.Python.variableDB_.getName(block.getFieldValue('dht_sensor'), Blockly.Variables.NAME_TYPE);
   var dropdown_type = block.getFieldValue('TYPE');
   var dropdown_pin = block.getFieldValue('PIN');
   // TODO: Assemble Python into code variable.
@@ -192,7 +192,7 @@ Blockly.Python['dht_create'] = function(block) {
 // DHT measure
 
 Blockly.Python['dht_measure'] = function(block) {
-  var variable_sensor = Blockly.Python.variableDB_.getName(block.getFieldValue('SENSOR'), Blockly.Variables.NAME_TYPE);
+  var variable_sensor = Blockly.Python.variableDB_.getName(block.getFieldValue('dht_sensor'), Blockly.Variables.NAME_TYPE);
   // TODO: Assemble Python into code variable.
   var code = variable_sensor + '.measure()\n';
   return code;
@@ -201,7 +201,7 @@ Blockly.Python['dht_measure'] = function(block) {
 //DHT read
 
 Blockly.Python['dht_read'] = function(block) {
-  var variable_sensor = Blockly.Python.variableDB_.getName(block.getFieldValue('SENSOR'), Blockly.Variables.NAME_TYPE);
+  var variable_sensor = Blockly.Python.variableDB_.getName(block.getFieldValue('dht_sensor'), Blockly.Variables.NAME_TYPE);
   var dropdown_data = block.getFieldValue('DATA');
   // TODO: Assemble Python into code variable.
   var code = '';
